@@ -69,7 +69,7 @@ public class MainController {
 			try {
 				fech = new SimpleDateFormat("dd/MM/yyyy hh:mm aa").parse(fechadif);
 				libro.setFechaIngreso(fech);
-				
+				libroService.createDate(libro);
 				mav.addObject("success", true);
 			}catch(Exception e) {e.printStackTrace();}
 			

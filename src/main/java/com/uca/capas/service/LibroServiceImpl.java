@@ -30,4 +30,10 @@ public class LibroServiceImpl implements LibroService{
 		return libroDAO.findAll();
 	}
 
+	@Override
+	public void createDate(Libro libro) throws DataAccessException {
+		// TODO Auto-generated method stub
+		libroDAO.save(libro);
+	}
+
 }

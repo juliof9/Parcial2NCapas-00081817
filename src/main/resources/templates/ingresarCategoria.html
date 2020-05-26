@@ -15,8 +15,7 @@
 	<label>Nombre categoria: </label><br>
 	<input type="text" th:field="*{categoria}" size="40" placeholder="nombre">
 	<span th:errors ="*{categoria}" style = "color: #E81505;"></span><br>
-</form>
-<form th:action="@{/inicio}">
+	
 	<label>Categoria ingresada con exito</label>
 	<input type="submit" value="Guardar Categoria">
 </form>
